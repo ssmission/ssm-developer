@@ -12,10 +12,9 @@
 function myfunction() {
     Notification.requestPermission().then(perm => {
         alert(perm);
-        const img = "/referral-suite/logo.png";
-        const text = "HEY! Your task is now overdue.";
-        const notification = new Notification("To do list", { body: text, icon: img });
-    })
+    });
+    const text = "HEY! Your task is now overdue.";
+    const notification = new Notification("To do list", { body: text });
 }
     </script>
 </body>
